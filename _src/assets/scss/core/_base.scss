@@ -116,6 +116,7 @@ html {
     & .container {
         background-color: #eff9ff;
         padding: 15px;
+        height: 550px;
         & .reasons {
             font-family: $text-font-1;
             font-weight: bold;
@@ -128,7 +129,7 @@ html {
             justify-content: center;
             grid-template-columns: 180px;
             grid-template-rows: 125px 125px 125px;
-            margin-top: 40px;
+            margin-top: 35px;
             line-height: 30px;
             font-family: $text-font-2;
             text-align: center;
@@ -141,6 +142,23 @@ html {
             background-color: #f26002;
             color: white;
             margin-left: 50px;
+            
+        }
+        & .btn_up {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            top: 1512px;
+            left: 138px;
+            right: 137px;
+            bottom: 53px;
+                & .arrow {
+                    position: relative;
+                    top: 30%;
+                    left:26%;
+                }
         }
     }
 }
@@ -227,6 +245,7 @@ html {
             }
         }
         & .container {
+            height: 350px;
             & .reasons {
                 font-size: 26px;
                 line-height: 30px;
@@ -240,8 +259,19 @@ html {
             }
             & .btn_1 {
                 position: relative;
-                margin-left: 270px;
+                margin-left: 280px;
                 margin-bottom: 50px;
+            }
+            & .btn_up {
+                top: 1450px;
+                left: 370px;
+                right: 137px;
+                bottom: 53px;
+                    & .arrow {
+                        position: relative;
+                        top: 30%;
+                        left:26%;
+                    }
             }
         }
     }
@@ -264,6 +294,22 @@ html {
         & .last {
             margin-top: 9px;
             text-align: left;
+        }
+    }
+}
+@media all and (min-width:1200px) {
+    .hero {
+        width: 100vw;
+        height: 100vh;
+        & .text {
+            & .title {
+                font-size: 100px; 
+                line-height: 132px;
+                text-align: center;
+            }
+            & .sub { 
+                font-size: 24px; 
+            }  
         }
     }
 }
