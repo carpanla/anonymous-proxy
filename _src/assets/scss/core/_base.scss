@@ -1,24 +1,87 @@
 html {
-    font-family: 'Roboto Slab', serif;
+    font-family: $text-font-1;
 }
 
 .page {
     box-sizing: border-box;
+    height: 100vh;
 }
 
 /*H E A D E R*/ 
 
 .header {
     width: 100vw;
-    height: 30%;
+    z-index: 1;
     & .ham_menu {
         position: fixed;
         width: 44px;
         height: 44px;
         background-color: #0271bc;
+        margin-top: 0;
         & .ham {
             padding-top: 15px;
             padding-left: 14px;
         }
     }
+}
+.hero {
+    display: flex;
+    background: url('../images/cover.jpg');
+    width: 320px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    padding-top: 284px;
+    & .text {
+        color: white;
+        padding-bottom: 143px;
+        padding-left: 15px;
+        padding-right: 15px;
+        & .title {
+            font-size: 42px;
+            font-weight: bold;
+            text-align: center;
+            font-family: $text-font-1;
+            text-transform: uppercase;
+        }
+        & .sub {
+            font-family: $text-font-2;
+            font-size: 16px;
+            text-align: center;
+        }  
+    }
+    & .btn_down {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 500px;
+        left: 138px;
+        right: 137px;
+        bottom: 53px;
+        & .down {
+            position: relative;
+            top: 30%;
+            left:26%;
+        }
+    }
+
+    .main {
+        & .text_container {
+            display: flex;
+            & .insomnia {
+                font-family: $text-font-2;
+                font-size: 14px;
+                color: #8ccbea;
+            }
+            & .looking {
+                font-family: $text-font-1;
+                font-weight: bold;
+                font-size: 24px;
+            }
+        }
+    }
+    
 }
