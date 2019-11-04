@@ -24,6 +24,9 @@ html {
         }
     }
 }
+
+/*H E R O*/ 
+
 .hero {
     display: flex;
     background: url('../images/cover.jpg');
@@ -68,6 +71,8 @@ html {
         }
     }
 }
+
+/*M A I N*/ 
 
 .main {
     & .text_container {
@@ -140,6 +145,8 @@ html {
     }
 }
 
+/*F O O T E R*/ 
+
 .footer {
     background-color: #304268;
     display: flex;
@@ -176,6 +183,87 @@ html {
         margin-top: 30px;
         & .heart {
             color: #f26002;
+        }
+    }
+}
+
+/*M E D I A Q U E R Y S*/ 
+
+@media all and (min-width:768px){
+    .hero {
+        width: 100vw;
+        & .text {
+            & .title {
+                font-size: 80px; 
+            }
+            & .sub { 
+                font-size: 24px; 
+            }  
+        }
+        & .btn_down {
+            position: absolute;
+            top: 650px;
+            left: 350px;
+            right: 137px;
+            bottom: 53px;
+            & .down {
+                position: relative;
+                top: 30%;
+                left:26%;
+            }
+        }
+    }
+    .main {
+        & .text_container {
+            padding: 39px;
+            & .looking {
+                font-size: 26px;
+                line-height: 45px;
+            }
+            & .paragraph {
+                font-size: 20px;
+                line-height: 30px;
+                margin-right: 40px;
+            }
+        }
+        & .container {
+            & .reasons {
+                font-size: 26px;
+                line-height: 30px;
+            }
+            & .items {
+                display: grid;
+                grid-template-rows: 110px;
+                grid-template-columns: 200px 200px 200px;
+                text-align: center;
+                padding: 30px;
+            }
+            & .btn_1 {
+                position: relative;
+                margin-left: 270px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px;
+        height: 240px;
+        & .links {
+            order: 2;
+            text-align: left;
+            
+        }
+        & .rrss {
+            order: 3;
+            text-align: left;
+        }
+        & .last {
+            margin-top: 9px;
+            text-align: left;
         }
     }
 }
