@@ -203,7 +203,7 @@
     }
 }
 
-/*M E D I A Q U E R Y S*/ 
+/*M E D I A Q U E R I E S*/ 
 
 @media all and (min-width:768px){
     .hero {
@@ -299,6 +299,7 @@
 
 @media all and (min-width:1200px){
     .hero {
+        height: 100vh;
         width: 100vw;
         & .text {
             margin-left:275px;
