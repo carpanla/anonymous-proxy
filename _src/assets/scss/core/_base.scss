@@ -75,6 +75,9 @@
 /*M A I N*/ 
 
 .main {
+    & .special {
+        display: none;
+    }
     & .text_container {
         display: flex;
         flex-direction: column;
@@ -151,9 +154,9 @@
             background-color: $orange;
             color: $white;
             margin-left: 50px;
-            transition-property: all;
-            transition-duration: 300ms;
-            transition-timing-function: ease-out;
+            
+           
+            transition-timing-function: ease;
             transition-delay: 20ms;
             &:hover {
                 background-color: $blue;
@@ -191,8 +194,6 @@
                     }
                 }    
         }
-    
-        
     }
 }
 
@@ -268,6 +269,27 @@
         }
     }
     .main {
+        & .special {
+            display: block;
+            background-color: orange;
+            margin-bottom: 10px;
+            & h2 {
+                text-align: center;
+            }
+            & .discount_offer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 20px;
+                & .item1 {
+                    width: 50%;
+                }
+                & .item2 {
+                    width: 50%;
+                }
+            
+            }
+        }
         & .text_container {
             padding: 39px;
             & .looking {
